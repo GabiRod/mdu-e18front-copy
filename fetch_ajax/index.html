@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Get started with HTML, CSS and JavaScript">
+  <meta name="author" content="Rasmus Cederdorff">
+  <title>FETCH</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <nav class="tabbar">
+    <a href="#family" onclick="showPage('family')">Family Members</a>
+    <a href="#teachers" onclick="showPage('teachers')">Teachers</a>
+    <a href="#posts" onclick="showPage('posts')">Posts</a>
+  </nav>
+
+  <h1> FETCH </h1>
+  <br>
+    <input type="text" placeholder="SEARCH" onkeyup="search(this.value)">
+    <br>
+  <h3>My awesome AJAX, JSON & FETCH Web App</h3>
+
+
+  <!-- family members page -->
+  <section id="family" class="page">
+    <header class="topbar">
+      <h2>Family Members</h2>
+    </header>
+
+    <section id="family-members" class="grid-container">
+      <p class="no-data">Push button to load data</p>
+    </section>
+    <button type="button" onclick="loadFamilyMembers()">LOAD Family members</button>
+  </section>
+
+
+  <!-- teachers page -->
+  <section id="teachers" class="page">
+    <header class="topbar">
+      <h2>Teacher</h2>
+    </header>
+    <section id="teachers" class="grid-container" >
+    <p class="no-data">Push button to load data</p>
+    </section>
+    <button type="button" onclick="loadTeachers()">LOAD Teachers</button>
+  </section>
+
+<!-- posts page -->
+<section id="posts" class="page" >
+  <header class="topbar">
+  <h2>Posts</h2>
+  </header>
+  <section id="posts" class="grid-container">
+    <p class="no-data">Push button to load data</p>
+  </section>
+  <button type="button" onclick="loadPosts()">LOAD Posts</button>
+</section>
+  <!-- main js file -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

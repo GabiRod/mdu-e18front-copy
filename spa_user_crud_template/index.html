@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>SINGLE PAGE WEB APP TEMPLATE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Get started with HTML, CSS and JavaScript">
+  <meta name="author" content="Rasmus Cederdorff">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+</head>
+
+<body>
+  <!-- tabbar navigation -->
+  <nav class="tabbar">
+    <a href="#home" onclick="showPage('home')">Home</a>
+
+  </nav>
+
+  <!-- pages -->
+  <!-- home page -->
+  <section id="home" class="page">
+    <header class="topbar">
+      <h2>USER CRUD</h2>
+      <a class="right" href="#create" onclick="showPage('create')">Add</a>
+    </header>
+    <div id="user-container" class="grid-container">
+
+    </div>
+  </section>
+
+  <!-- create user page -->
+  <section id="create" class="page">
+    <header class="topbar">
+      <a class="left" href="#home" onclick="showPage('home')">Back</a>
+      <form id="userForm">
+        <h2>Create a new User</h2>
+        <input type="text" id="name" placeholder="Type your name" required>
+        <input type="email" id="mail" placeholder="Type your mail" required>
+        <button type="button" name="button" onclick="createUser('create')">Create User</button>
+      <a class="right" href="#home" onclick="showPage('home')">Save</a>
+    </header>
+    <form>
+
+    </form>
+  </section>
+
+  <!-- edit user page -->
+  <section id="edit" class="page">
+    <header class="topbar">
+      <a class="left" href="#home" onclick="showPage('home')">Cancel</a>
+      <form>
+        <h2>Update User</h2>
+        <input type="text" id="name-update" required>
+        <input type="email" id="mail-update" required>
+        <button type="button" name="button" onclick="updateUser()">Update User</button>
+      </form>
+      <a class="right" href="#home" onclick="showPage('home')">Save</a>
+    </header>
+    <form>
+
+    </form>
+  </section>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-app.js"></script>
+  <!-- Firebase Firestore (database) JS SDK -->
+  <script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-firestore.js"></script>
+  <!-- main js file -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

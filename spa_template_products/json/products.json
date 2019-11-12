@@ -1,0 +1,27 @@
+
+
+[{
+        "brand": "Apple",
+        "model": "Mac Book 13",
+        "price": "1200",
+        "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-space-gray-select-201810?wid=904&hei=840&fmt=jpeg&qlt=80&op_usm=0.5,0.5&.v=1541713862468"
+},
+    {
+        "brand": "Apple",
+        "model": "Mac Book 15",
+        "price": "1300",
+        "img": "https://im9.cz/sk/iR/importprodukt-orig/e99/e996f5e453fb4014d06b4163d3f804d5--mmf250x250.jpg"
+},
+    {
+        "brand": "Apple",
+        "model": "Mac Book 13",
+        "price": "1500",
+        "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-space-gray-select-201810?wid=904&hei=840&fmt=jpeg&qlt=80&op_usm=0.5,0.5&.v=1541713862468"
+},
+    {
+        "brand": "Asus",
+        "model": "ASUS 5687 HL",
+        "price": "1500",
+        "img": "https://azcd.joycemayne.com.au/media/catalog/product/cache/23/image/992x558/9df78eab33525d08d6e5fb8d27136e95/t/p/tp412ua-ec047t.jpg"
+}
+]
